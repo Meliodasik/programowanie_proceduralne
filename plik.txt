@@ -1,2 +1,3 @@
 pierwszy commit
-
+/
+powtorka
