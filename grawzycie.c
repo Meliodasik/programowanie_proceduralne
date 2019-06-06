@@ -24,7 +24,7 @@ void printTable(TableType table) {
 }
 
 
-void ClesrTable(TableType table){
+void ClearTable(TableType table){
 	int height, width;
 		for (height = 0; height < HEIGHT; height++){
 			for (width = 0; width < WIDTH; width++){
@@ -34,7 +34,7 @@ void ClesrTable(TableType table){
 }
 
 
-void askUser (TableType table1){
+void askUser (TableType tableA){
 		int i;
 		int n;
 		int height, width;
@@ -46,4 +46,22 @@ void askUser (TableType table1){
 			scanf("%d %d", &height, &width);
 			tableA[height][width] = LIFE_YES;
 		}
+}
+
+int getNeithborvalue(TableType table, int row, int col){
+		if(row < 0 || row >=HEIGHT || col < 0 || col <= WIDTH != LIFE_YES){
+			return 0;
+			}
+			else{
+				return 1;
+				}
+}
+int getNeithborCount(TableType table, int row, int col){
+	
+}
+	
+int main(void){
+			TableType table;
+			printTable(table);
+		
 }
